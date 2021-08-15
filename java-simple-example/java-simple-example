@@ -1,0 +1,53 @@
+   JAVA - simple example
+   =====================
+   
+   
+     0. Write simple java program
+     -----------------------------
+public class MyProgram {
+    public static void main(String[] args) {
+        System.out.println("This is MyProgram!");
+    }
+}
+
+
+     1. Compile .java file to .class file
+     -------------------------------------
+javac MyProgram.java
+
+     2. Run java .class file
+     -----------------------
+java MyProgram
+
+
+===============================================================================
+===============================================================================
+
+     a. Create and deploy executable program (JAR file)
+     --------------------------------------------------
+     ->  Create manifest.mf file with next line:  Main-Class: MyProgram
+     ->  Now in folder MyProgram there are:
+           MyProgram.java
+           MyProgram.class
+           manifest.mf
+          
+     ->  Create MyProgram.jar
+jar -cvfm MyProgram.jar manifest.mf *.class 
+     
+     
+     
+     b. Execute the JAR file
+     --------------------------------------------------
+java -jar MyProgram.jar
+
+     c. See the JAR file content (tvf = table of content)
+     ----------------------------------------------------
+jar -tvf MyProgram.jar
+
+     c. Extract the JAR file content (xvf = extract the content of the JAR)
+     ----------------------------------------------------------------------
+jar -xvf MyProgram.jar
+
+
+
+
