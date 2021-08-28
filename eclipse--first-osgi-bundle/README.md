@@ -32,12 +32,11 @@ Next you need to inform Eclipse of the location of the source code.
 * Eclipse → Window → Preferences → Java → Build Path → User Libraries →  Source attachment → Edit
 * External File → browse to the file org.eclipse.osgi.source_version.jar from ***/home/user/equinox-osgi/equinox-SDK-3.5.1/plugins/*** where version is the actual version tag attached to the JAR file
 
-You should now have something that looks like:
-
-![Setting up Eclipse with Equinox](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png)
+You should now have something that looks like: <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png" title="Setting up Eclipse with Equinox" width="48">
 
 <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png" width="48">
+
 
 ---
 ## Bnd Workspace Creation
@@ -46,13 +45,13 @@ All BND based projects requires bnd workspace to get start.Bnd workspace is diff
 Let’s create Bnd workspace in the eclipse.
 
 * File → New → Bnd OSGi Workspace → select Create in: → give bnd workspace folder location → Next <br>
-![Bnd Workspace Creation 1](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg) <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg" title="Bnd Workspace Creation 1" width="50"> <br>
 
 * select ***bndtools/workspace*** → Next <br>
-![Bnd Workspace Creation 2](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.png)
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.jpg" title="Bnd Workspace Creation 2" width="50"> <br>
 
 * this will create the ````cnf```` directory <br>
-![Bnd Workspace Creation 3](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-3.png)
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-3.jpg" title="Bnd Workspace Creation 3" width="50"> <br>
 
 <br>
 
@@ -60,36 +59,36 @@ Let’s create Bnd workspace in the eclipse.
 ## First OSGi Bundle Creation
 ---
 * File →  New → Bnd OSGi Project → select Project Template: → select ```<<Empty>> 0.0.0--[built-in]``` → Next <br>
-![First OSGi Bundle Creation 1](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-1.png)
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-1.png" title="First OSGi Bundle Creation 1" width="80">
 
 What is Project Template? - BND provides list of project templates for web based project, REST/SOAP web services based project like Maven Archie type.
 
 * give Project name: org.osgi.tutorial → Finish <br>
-![First OSGi Bundle Creation 2](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-2.png)
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-2.png" title="First OSGi Bundle Creation 2" width="80">
 
 It is  always best practice to give project name as “package name” as OSGI bundles follows this specification. It will create the below project structure and each project will have ```bnd.bnd``` file that contains settings of the project.  <br>
 
 Every OSGI Bundle project requires Custom Bundle Activator. Let's create a HelloWorldActivator that implements BundleActivator. <br>
-![HelloWorldActivator](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/hello-world-activator.png) <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/hello-world-activator.png" title="HelloWorldActivator" width="90"> <br>
 
 <br>
 
 
 The ```bnd.bnd``` file has:
 * * ***Contents*** and ***Description*** sections - used to auto create MANIFEST.MF file <br>
-![Bnd Contents](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-contents.png) <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-contents.png" title="Bnd Contents" width="90"> <br>
 <b>How to map BundleActivator in MANIFEST.MF?</b> <br>
 BND tools will auto create MANIFEST file from bnd.bnd file. You just need to update the bnd.bnd with version and activator details. You can also provide export package, import package details and all.
 Just refresh the project and you can see the generated jar file in “generated”. You can directly deploy this jar file in OSGI container. <br>
-![Bnd Description](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-description.png) <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-description.png" title="Bnd Description" width="90"> <br>
 * * ***Build*** section - used manage project dependencies <br>
-![Bnd Build](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-build.png) <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-build.png" title="Bnd Build" width="90"> <br> <br>
 * * ***Run*** section - used to Run the OSGI bundle. To run the configuration click the green Run button. <br>
-![Bnd Run](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-run.png) <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-run.png" title="Bnd Rub" width="90"> <br>
 * * ***Source*** section <br>
-![Bnd Source](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-source.png) <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-source.png" title="Bnd Source" width="90"> <br>
 
-```
+```java
 -buildpath: osgi.core
 Bundle-Activator: org.osgi.tutorial.HelloWorldActivator
 Bundle-Version: 1.0.0.${tstamp}
