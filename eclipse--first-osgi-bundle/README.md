@@ -34,7 +34,7 @@ Next you need to inform Eclipse of the location of the source code.
 
 You should now have something that looks like:
 
-![Setting up Eclipse with Equinox](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png)
+![Setting up Eclipse with Equinox](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png|width=20)
 
 <br>
 
@@ -45,7 +45,7 @@ All BND based projects requires bnd workspace to get start.Bnd workspace is diff
 Let’s create Bnd workspace in the eclipse.
 
 * File → New → Bnd OSGi Workspace → select Create in: → give bnd workspace folder location → Next <br>
-![Bnd Workspace Creation 1](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg){ width=50% } <br>
+![Bnd Workspace Creation 1](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg) <br>
 
 * select ***bndtools/workspace*** → Next <br>
 ![Bnd Workspace Creation 2](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.png)
@@ -87,6 +87,7 @@ Just refresh the project and you can see the generated jar file in “generated�
 ![Bnd Run](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-run.png) <br>
 * * ***Source*** section <br>
 ![Bnd Source](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-source.png) <br>
+
 ```
 -buildpath: osgi.core
 Bundle-Activator: org.osgi.tutorial.HelloWorldActivator
