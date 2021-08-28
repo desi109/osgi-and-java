@@ -34,7 +34,7 @@ Next you need to inform Eclipse of the location of the source code.
 
 You should now have something that looks like:
 
-![Setting up Eclipse with Equinox](https://github.com/desi109/osgi-and-java/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png)
+![Setting up Eclipse with Equinox](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png)
 
 <br>
 
@@ -45,13 +45,13 @@ All BND based projects requires bnd workspace to get start.Bnd workspace is diff
 Let’s create Bnd workspace in the eclipse.
 
 * File → New → Bnd OSGi Workspace → select Create in: → give bnd workspace folder location → Next <br>
-![Bnd Workspace Creation 1](https://github.com/desi109/osgi-and-java/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg)
+![Bnd Workspace Creation 1](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg)
 
 * select ***bndtools/workspace*** → Next <br>
-![Bnd Workspace Creation 2](https://github.com/desi109/osgi-and-java/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.png)
+![Bnd Workspace Creation 2](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.png)
 
 * this will create the ````cnf```` directory <br>
-![Bnd Workspace Creation 3](https://github.com/desi109/osgi-and-java/eclipse--first-osgi-bundle/images/bnd-workspace-creation-3.png)
+![Bnd Workspace Creation 3](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-3.png)
 
 <br>
 
@@ -59,12 +59,12 @@ Let’s create Bnd workspace in the eclipse.
 ## First OSGi Bundle Creation
 ---
 * File →  New → Bnd OSGi Project → select Project Template: → select ```<<Empty>> 0.0.0--[built-in]``` → Next <br>
-![First OSGi Bundle Creation 1](https://github.com/desi109/osgi-and-java/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-1.png)
+![First OSGi Bundle Creation 1](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-1.png)
 
 What is Project Template? - BND provides list of project templates for web based project, REST/SOAP web services based project like Maven Archie type.
 
 * give Project name: org.osgi.tutorial → Finish <br>
-![First OSGi Bundle Creation 2](https://github.com/desi109/osgi-and-java/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-2.png)
+![First OSGi Bundle Creation 2](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-2.png)
 
 It is  always best practice to give project name as “package name” as OSGI bundles follows this specification. It will create the below project structure and each project will have ```bnd.bnd``` file that contains settings of the project. The ```bnd.bnd``` file has:
 * * ***Contents*** and ***Description*** sections - used to auto create MANIFEST.MF file
