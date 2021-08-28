@@ -45,13 +45,13 @@ All BND based projects requires bnd workspace to get start.Bnd workspace is diff
 Let’s create Bnd workspace in the eclipse.
 
 * File → New → Bnd OSGi Workspace → select Create in: → give bnd workspace folder location → Next <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg" title="Bnd Workspace Creation 1" width="40%"> <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg" title="Bnd Workspace Creation 1" width="45%"> <br>
 
 * select ***bndtools/workspace*** → Next <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.png" title="Bnd Workspace Creation 2" width="40%"> <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.png" title="Bnd Workspace Creation 2" width="55%"> <br>
 
 * this will create the ````cnf```` directory <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-3.png" title="Bnd Workspace Creation 3" width="30%"> <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-3.png" title="Bnd Workspace Creation 3" width="35%"> <br>
 
 <br>
 
@@ -59,18 +59,22 @@ Let’s create Bnd workspace in the eclipse.
 ## First OSGi Bundle Creation
 ---
 * File →  New → Bnd OSGi Project → select Project Template: → select ```<<Empty>> 0.0.0--[built-in]``` → Next <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-1.png" title="First OSGi Bundle Creation 1" width="80%">
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-1.png" title="First OSGi Bundle Creation 1" width="70%">
 
 What is Project Template? - BND provides list of project templates for web based project, REST/SOAP web services based project like Maven Archie type.
 
 * give Project name: org.osgi.tutorial → Finish <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-2.png" title="First OSGi Bundle Creation 2" width="80%">
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-2.png" title="First OSGi Bundle Creation 2" width="70%">
 
 It is  always best practice to give project name as “package name” as OSGI bundles follows this specification. It will create the below project structure and each project will have ```bnd.bnd``` file that contains settings of the project.  <br>
 
 Every OSGI Bundle project requires Custom Bundle Activator. Let's create a HelloWorldActivator that implements BundleActivator. <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/hello-world-activator.png" title="HelloWorldActivator" width="90%"> <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/hello-world-activator.png" title="HelloWorldActivator" width="90%"> 
 
+<br>
+
+
+```HelloWorldActivator.java```
 ```java
 package org.osgi.tutorial;
 
