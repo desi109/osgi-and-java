@@ -45,13 +45,13 @@ All BND based projects requires bnd workspace to get start.Bnd workspace is diff
 Let’s create Bnd workspace in the eclipse.
 
 * File → New → Bnd OSGi Workspace → select Create in: → give bnd workspace folder location → Next <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg" title="Bnd Workspace Creation 1" width="50%"> <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg" title="Bnd Workspace Creation 1" width="40%"> <br>
 
 * select ***bndtools/workspace*** → Next <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.png" title="Bnd Workspace Creation 2" width="50%"> <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.png" title="Bnd Workspace Creation 2" width="40%"> <br>
 
 * this will create the ````cnf```` directory <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-3.png" title="Bnd Workspace Creation 3" width="50%"> <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-3.png" title="Bnd Workspace Creation 3" width="30%"> <br>
 
 <br>
 
@@ -70,6 +70,23 @@ It is  always best practice to give project name as “package name” as OSGI b
 
 Every OSGI Bundle project requires Custom Bundle Activator. Let's create a HelloWorldActivator that implements BundleActivator. <br>
 <img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/hello-world-activator.png" title="HelloWorldActivator" width="90%"> <br>
+
+```java
+package org.osgi.tutorial;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+
+public class HelloWorldActivator implements BundleActivator{
+    public void start(BundleContext context) throws Exception {
+        System.out.println("Hello World!");
+    }
+
+    public void stop(BundleContext context) throws Exception {
+        System.out.println("Goodbye World!");
+    }
+}
+```
 
 <br>
 
