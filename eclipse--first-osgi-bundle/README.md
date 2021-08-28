@@ -67,12 +67,39 @@ What is Project Template? - BND provides list of project templates for web based
 ![First OSGi Bundle Creation 2](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-2.png)
 
 It is  always best practice to give project name as “package name” as OSGI bundles follows this specification. It will create the below project structure and each project will have ```bnd.bnd``` file that contains settings of the project. The ```bnd.bnd``` file has:
-* * ***Contents*** and ***Description*** sections - used to auto create MANIFEST.MF file
-* * ***Build*** section - used manage project dependencies
-* * ***Run*** section - used to Run the OSGI bundle
+* * ***Contents*** and ***Description*** sections - used to auto create MANIFEST.MF file <br>
+![Bnd Contents](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-contents.png) <br>
+![Bnd Description](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-description.png) <br>
+* * ***Build*** section - used manage project dependencies <br>
+![Bnd Build](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-build.png) <br>
+* * ***Run*** section - used to Run the OSGI bundle. To run the configuration click the green Run button. <br>
+![Bnd Run](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-run.png) <br>
+* * ***Source*** section <br>
+![Bnd Source](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-source.png) <br>
+```
+-buildpath: osgi.core
+Bundle-Activator: org.osgi.tutorial.HelloWorldActivator
+Bundle-Version: 1.0.0.${tstamp}
 
-Update OSGI dependencies :
-Open bnd.bnd file and click on build tab.
-Under build path,click on + icon.
-It will open below path and search for osgi and add osgi.core bundle
-Save the file and refresh the project. It will add osgi.core in the referenced libraries.
+-runfw: org.eclipse.osgi;version='[3.13.100.v20180827-1536,3.13.100.v20180827-1536]'
+-runee: JavaSE-11
+
+-runprovidedcapabilities: ${native_capability}
+
+-resolve.effective: active;skip:="osgi.service"
+
+-runbundles: \
+	org.apache.felix.gogo.runtime,\
+	org.apache.felix.gogo.shell,\
+	org.apache.felix.gogo.command,\
+	org.osgi.tutorial;version=latest
+
+-runrequires: \
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)'
+	
+-runproperties: osgi.console=
+Export-Package: org.osgi.tutorial
+Bundle-Name: OSGi Tutorial Bundle  (org.osgi.tutorial)
+Bundle-Description: This is OSGi Bundle Tutorial.
+```
