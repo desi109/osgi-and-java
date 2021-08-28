@@ -45,7 +45,7 @@ All BND based projects requires bnd workspace to get start.Bnd workspace is diff
 Let’s create Bnd workspace in the eclipse.
 
 * File → New → Bnd OSGi Workspace → select Create in: → give bnd workspace folder location → Next <br>
-![Bnd Workspace Creation 1](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg | width=50) 
+![Bnd Workspace Creation 1](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg) 
 
 * select ***bndtools/workspace*** → Next <br>
 ![Bnd Workspace Creation 2](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.png)
@@ -66,9 +66,20 @@ What is Project Template? - BND provides list of project templates for web based
 * give Project name: org.osgi.tutorial → Finish <br>
 ![First OSGi Bundle Creation 2](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-2.png)
 
-It is  always best practice to give project name as “package name” as OSGI bundles follows this specification. It will create the below project structure and each project will have ```bnd.bnd``` file that contains settings of the project. The ```bnd.bnd``` file has:
+It is  always best practice to give project name as “package name” as OSGI bundles follows this specification. It will create the below project structure and each project will have ```bnd.bnd``` file that contains settings of the project.  <br>
+
+Every OSGI Bundle project requires Custom Bundle Activator. Let's create a HelloWorldActivator that implements BundleActivator. <br>
+![HelloWorldActivator](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/hello-world-activator.png) <br>
+
+<br>
+
+
+The ```bnd.bnd``` file has:
 * * ***Contents*** and ***Description*** sections - used to auto create MANIFEST.MF file <br>
 ![Bnd Contents](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-contents.png) <br>
+<b>How to map BundleActivator in MANIFEST.MF?</b> <br>
+BND tools will auto create MANIFEST file from bnd.bnd file. You just need to update the bnd.bnd with version and activator details. You can also provide export package, import package details and all.
+Just refresh the project and you can see the generated jar file in “generated”. You can directly deploy this jar file in OSGI container. <br>
 ![Bnd Description](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-description.png) <br>
 * * ***Build*** section - used manage project dependencies <br>
 ![Bnd Build](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-build.png) <br>

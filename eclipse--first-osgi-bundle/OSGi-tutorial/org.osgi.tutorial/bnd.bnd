@@ -1,0 +1,25 @@
+-buildpath: osgi.core
+Bundle-Activator: org.osgi.tutorial.HelloWorldActivator
+Bundle-Version: 1.0.0.${tstamp}
+
+-runfw: org.eclipse.osgi;version='[3.13.100.v20180827-1536,3.13.100.v20180827-1536]'
+-runee: JavaSE-11
+
+-runprovidedcapabilities: ${native_capability}
+
+-resolve.effective: active;skip:="osgi.service"
+
+-runbundles: \
+	org.apache.felix.gogo.runtime,\
+	org.apache.felix.gogo.shell,\
+	org.apache.felix.gogo.command,\
+	org.osgi.tutorial;version=latest
+
+-runrequires: \
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)'
+	
+-runproperties: osgi.console=
+Export-Package: org.osgi.tutorial
+Bundle-Name: OSGi Tutorial Bundle  (org.osgi.tutorial)
+Bundle-Description: This is OSGi Bundle Tutorial.
