@@ -34,9 +34,10 @@ Next you need to inform Eclipse of the location of the source code.
 
 You should now have something that looks like:
 
-![Setting up Eclipse with Equinox](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png|width=20)
+![Setting up Eclipse with Equinox](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png)
 
 <br>
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png" width="48">
 
 ---
 ## Bnd Workspace Creation
