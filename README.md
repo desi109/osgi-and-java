@@ -1,11 +1,6 @@
 # ```First OSGi Bundle```
 
 This ***First OSGi Bundle*** tutorial will drive you through a sample OSGI bundle project and OSGI runtime creation. We will see “How to develop OSGI Bundle” and  this tutorial is intended for beginners who are about to start learning OSGI. We will use: 
-* ```Eclipse```
-* ```IntelliJ IDEA```
-* ```terminal```
-
-<br>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">

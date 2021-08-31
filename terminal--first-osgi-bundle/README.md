@@ -16,7 +16,7 @@ This ***First OSGi Bundle*** tutorial will drive you through a sample OSGI bundl
       </ul>
     </li>
     <li>
-      <a href="#first-osgi-bundle-creation">First OSGi Bundle Creation</a>
+      <a href="#first-osgi-bundle">First OSGi Bundle</a>
     </li>
     <li>
       <a href="#install-bundle">Install Bundle</a>
@@ -58,7 +58,7 @@ Download Felix from https://felix.apache.org/documentation/downloads.html and in
 <br>
 
 ---
-## First OSGi Bundle Creation
+## First OSGi Bundle
 ---
 Create folder hierarchy like:
 ```

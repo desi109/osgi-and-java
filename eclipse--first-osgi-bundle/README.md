@@ -4,8 +4,32 @@ This ***First OSGi Bundle*** tutorial will drive you through – BND tools works
 
 <br>
 
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#prerequisites">Prerequisites</a>
+    </li>
+    <li>
+      <a href="#setting-up-eclipse-with-equinox">Setting up Eclipse with Equinox</a>
+    </li>
+    <li>
+      <a href="#bnd-workspace-creation">Bnd Workspace Creation</a>
+    </li>
+    <li>
+      <a href="#first-osgi-bundle">First OSGi Bundle</a>
+    </li>
+  </ol>
+</details>
+
+<br>
+
+<br>
+
+
 ---
-## Prerequisites:
+## Prerequisites
 ---
 What is required to start OSGI Project?
 
@@ -19,9 +43,8 @@ Lets start developing simple OSGI bundle.
 <br>
 
 ---
-### Setting up Eclipse with Equinox
-<br>
-
+## Setting up Eclipse with Equinox
+---
 Download Equinox from https://download.eclipse.org/equinox/ and install it in local folder (e.g. ***/home/user/equinox-osgi/```equinox-SDK-3.5.1```/***).
 
 * Eclipse → Window → Preferences → Java → Build Path → User Libraries.
@@ -56,7 +79,7 @@ Let’s create Bnd workspace in the eclipse.
 <br>
 
 ---
-## First OSGi Bundle Creation
+## First OSGi Bundle
 ---
 * File →  New → Bnd OSGi Project → select Project Template: → select ```<<Empty>> 0.0.0--[built-in]``` → Next <br>
 <img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-1.png" title="First OSGi Bundle Creation 1" width="70%">
