@@ -11,8 +11,8 @@ This ***First OSGi Bundle*** tutorial will drive you through a sample OSGI bundl
     <li>
       <a href="#prerequisites">Prerequisites</a>
       <ul>
-        <li><a href="#(a)-setting-up-with-equinox">(a) Setting up with Equinox</a></li>
-        <li><a href="#(b)-setting-up-with-felix">(b) Setting up with Felix</a></li>
+        <li><a href="#a-setting-up-with-equinox">(a) Setting up with Equinox</a></li>
+        <li><a href="#b-setting-up-with-felix">(b) Setting up with Felix</a></li>
       </ul>
     </li>
     <li>
@@ -21,8 +21,8 @@ This ***First OSGi Bundle*** tutorial will drive you through a sample OSGI bundl
     <li>
       <a href="#install-bundle">Install Bundle</a>
       <ul>
-        <li><a href="#(a)-install-bundle-with-equinox">(a) Install bundle with Equinox</a></li>
-        <li><a href="#(b)-install-bundle-with-felix">(b) Install bundle with Felix</a></li>
+        <li><a href="#a-install-bundle-with-equinox">(a) Install bundle with Equinox</a></li>
+        <li><a href="#b-install-bundle-with-felix">(b) Install bundle with Felix</a></li>
       </ul>
     </li>
   </ol>
