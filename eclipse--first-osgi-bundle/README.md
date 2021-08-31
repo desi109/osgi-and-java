@@ -33,7 +33,7 @@ Next you need to inform Eclipse of the location of the source code.
 * External File → browse to the file org.eclipse.osgi.source_version.jar from ***/home/user/equinox-osgi/equinox-SDK-3.5.1/plugins/*** where version is the actual version tag attached to the JAR file
 
 You should now have something that looks like: <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png" title="Setting up Eclipse with Equinox" width="70">
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/setting-up-eclipse-with-equinox.png" title="Setting up Eclipse with Equinox" width="70%">
 
 <br>
 
