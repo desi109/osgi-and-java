@@ -37,3 +37,11 @@ This ***First OSGi Bundle*** tutorial will drive you through a sample OSGi bundl
     </li>
   </ol>
 </details>
+
+<br>
+
+<br>
+
+---
+# Bundle Lifecycle
+<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bundle-lifecycle.png" title="Bundle Lifecycle" width="80%"> <br>
