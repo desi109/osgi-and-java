@@ -1,6 +1,6 @@
 # ```First OSGi Bundle```
 
-This ***First OSGi Bundle*** tutorial will drive you through a sample OSGI bundle project and OSGI runtime creation. We will see “How to develop OSGI Bundle” and  this tutorial is intended for beginners who are about to start learning OSGI. We will use: 
+This ***First OSGi Bundle*** tutorial will drive you through a sample OSGi bundle project and OSGi runtime creation. We will see “How to develop OSGi Bundle” and  this tutorial is intended for beginners who are about to start learning OSGi. We will use: 
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -15,7 +15,7 @@ This ***First OSGi Bundle*** tutorial will drive you through a sample OSGI bundl
       </ul>
     </li>
     <li>
-      <a href="">IntelliJ IDEA</a>
+      <a href="https://github.com/desi109/osgi-and-java/tree/master/intellij--first-osgi-bundle">IntelliJ IDEA</a>
       <ul>
         <li><a href="">OSGi Bundle Project</a></li>
         <li><a href="">org.osgi.tutorial.jar</a></li>

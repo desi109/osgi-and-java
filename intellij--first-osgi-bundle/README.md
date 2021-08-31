@@ -1,6 +1,6 @@
-# ```Eclipse:``` First OSGi Bundle
+# ```IntelliJ IDEA:``` First OSGi Bundle
 
-This ***First OSGi Bundle*** tutorial will drive you through – BND tools workspace creation, a sample OSGI bundle project and OSGI runtime creation.We will see “How to develop OSGI Bundle”  and  this tutorial is intended for beginners who are about to start learning OSGI. We will use ```Eclipse```.
+This ***First OSGi Bundle*** tutorial will drive you through a sample OSGi bundle project and OSGi runtime creation. We will see “How to develop OSGi Bundle”  and  this tutorial is intended for beginners who are about to start learning OSGi. We will use ```IntelliJ IDEA```.
 
 <br>
 
@@ -12,10 +12,7 @@ This ***First OSGi Bundle*** tutorial will drive you through – BND tools works
       <a href="#prerequisites">Prerequisites</a>
     </li>
     <li>
-      <a href="#setting-up-eclipse-with-equinox">Setting up Eclipse with Equinox</a>
-    </li>
-    <li>
-      <a href="#bnd-workspace-creation">Bnd Workspace Creation</a>
+      <a href="#setting-up-eclipse-with-equinox">Setting up IntelliJ IDEA with Equinox</a>
     </li>
     <li>
       <a href="#first-osgi-bundle">First OSGi Bundle</a>
@@ -31,14 +28,12 @@ This ***First OSGi Bundle*** tutorial will drive you through – BND tools works
 ---
 ## Prerequisites
 ---
-What is required to start OSGI Project?
+What is required to start OSGi Project?
 
-1. ```Eclipse IDE```: download latest Eclipse IDE that supports BND tools plugin.
-2. ```BND Tools eclipse plugin```
-* * Eclipse → Help → Eclipse Marketplace.. → search for ***Bnd tools***
-3. ```Equinox```: Eclipse IDE is built on top of OSGI.
-Lets start developing simple OSGI bundle.
-4. ```Java```
+1. ```IntelliJ IDEA```
+2. ```Equinox```: Eclipse IDE is built on top of OSGi.
+Lets start developing simple OSGi bundle.
+3. ```Java```
 
 <br>
 
@@ -60,24 +55,6 @@ You should now have something that looks like: <br>
 
 <br>
 
-
----
-## Bnd Workspace Creation
----
-All BND based projects requires bnd workspace to get start.Bnd workspace is different from  normal eclipse workspace and BND workspace contains all project dependencies and build configurations for  OSGI projects. Bnd workspace groups all OSGI bundle projects along with conf directory. It also provides Gradle build  support to build projects automatically.
-Let’s create Bnd workspace in the eclipse.
-
-* File → New → Bnd OSGi Workspace → select Create in: → give bnd workspace folder location → Next <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-1.jpg" title="Bnd Workspace Creation 1" width="45%"> <br>
-
-* select ***bndtools/workspace*** → Next <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-2.png" title="Bnd Workspace Creation 2" width="55%"> <br>
-
-* this will create the ````cnf```` directory <br>
-<img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-workspace-creation-3.png" title="Bnd Workspace Creation 3" width="35%"> <br>
-
-<br>
-
 ---
 ## First OSGi Bundle
 ---
@@ -89,9 +66,9 @@ What is Project Template? - BND provides list of project templates for web based
 * give Project name: org.osgi.tutorial → Finish <br>
 <img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/first-osgi-bundle-creation-2.png" title="First OSGi Bundle Creation 2" width="70%">
 
-It is  always best practice to give project name as “package name” as OSGI bundles follows this specification. It will create the below project structure and each project will have ```bnd.bnd``` file that contains settings of the project.  <br>
+It is  always best practice to give project name as “package name” as OSGi bundles follows this specification. It will create the below project structure and each project will have ```bnd.bnd``` file that contains settings of the project.  <br>
 
-Every OSGI Bundle project requires Custom Bundle Activator. Let's create a HelloWorldActivator that implements BundleActivator. <br>
+Every OSGi Bundle project requires Custom Bundle Activator. Let's create a HelloWorldActivator that implements BundleActivator. <br>
 <img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/hello-world-activator.png" title="HelloWorldActivator" width="90%"> 
 
 <br>
@@ -123,11 +100,11 @@ The ```bnd.bnd``` file has:
 <img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-contents.png" title="Bnd Contents" width="90%"> <br>
 <b>How to map BundleActivator in MANIFEST.MF?</b> <br>
 BND tools will auto create MANIFEST file from bnd.bnd file. You just need to update the bnd.bnd with version and activator details. You can also provide export package, import package details and all.
-Just refresh the project and you can see the generated jar file in “generated”. You can directly deploy this jar file in OSGI container. <br>
+Just refresh the project and you can see the generated jar file in “generated”. You can directly deploy this jar file in OSGi container. <br>
 <img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-description.png" title="Bnd Description" width="90%"> <br>
 * * ***Build*** section - used manage project dependencies <br>
 <img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-build.png" title="Bnd Build" width="90%"> <br> <br>
-* * ***Run*** section - used to Run the OSGI bundle. To run the configuration click the green Run button. <br>
+* * ***Run*** section - used to Run the OSGi bundle. To run the configuration click the green Run button. <br>
 <img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-run.png" title="Bnd Rub" width="90%"> <br>
 * * ***Source*** section <br>
 <img src="https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/images/bnd-source.png" title="Bnd Source" width="90%"> <br>

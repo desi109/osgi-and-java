@@ -1,6 +1,6 @@
 # ```Terminal/CMD:``` First OSGi Bundle
 
-This ***First OSGi Bundle*** tutorial will drive you through a sample OSGI bundle project. We will see “How to develop OSGI Bundle”  and  this tutorial is intended for beginners who are about to start learning OSGI. We will use only ```Terminal``` or ```CMD``` .
+This ***First OSGi Bundle*** tutorial will drive you through a sample OSGi bundle project. We will see “How to develop OSGi Bundle”  and  this tutorial is intended for beginners who are about to start learning OSGi. We will use only ```Terminal``` or ```CMD``` .
 
 <br>
 
@@ -31,9 +31,9 @@ This ***First OSGi Bundle*** tutorial will drive you through a sample OSGI bundl
 ---
 ## Prerequisites:
 ---
-What is required to start OSGI Project?
-1. Lets start developing simple OSGI bundle. <br>
-(a) ```Equinox```: Eclipse IDE is built on top of OSGI. <br>
+What is required to start OSiI Project?
+1. Lets start developing simple OSGi bundle. <br>
+(a) ```Equinox```: Eclipse IDE is built on top of OSGi. <br>
 <b>OR</b> <br>
 (b) ```Felix```: Apache Felix is a community effort to implement the OSGi Framework and Service platform and other interesting OSGi-related technologies . <br>
 
