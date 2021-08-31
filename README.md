@@ -7,7 +7,7 @@ This ***First OSGi Bundle*** tutorial will drive you through a sample OSGI bundl
   <summary><h2 style="display: inline-block"></h2></summary>
   <ol>
     <li>
-      <a href="#https://github.com/desi109/osgi-and-java/tree/master/eclipse--first-osgi-bundle">Eclipse</a>
+      <a href="https://github.com/desi109/osgi-and-java/tree/master/eclipse--first-osgi-bundle">Eclipse</a>
       <ul>
         <li><a href="https://github.com/desi109/osgi-and-java/tree/master/eclipse--first-osgi-bundle/OSGi-tutorial">Bnd workspace</a></li>
         <li><a href="https://github.com/desi109/osgi-and-java/tree/master/eclipse--first-osgi-bundle/OSGi-tutorial/org.osgi.tutorial">OSGi Bundle Project</a></li>
