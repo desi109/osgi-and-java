@@ -136,3 +136,6 @@ Export-Package: org.osgi.tutorial
 Bundle-Name: OSGi Tutorial Bundle  (org.osgi.tutorial)
 Bundle-Description: This is OSGi Bundle Tutorial.
 ```
+<br>
+
+JAR file: [org.osgi.tutorial.jar](https://github.com/desi109/osgi-and-java/blob/master/eclipse--first-osgi-bundle/OSGi-tutorial/org.osgi.tutorial/generated/org.osgi.tutorial.jar)

@@ -1,0 +1,25 @@
+javac -cp ~/equinox-osgi/equinox-SDK-3.5.1/plugins/org.eclipse.osgi_3.5.1.R35x_v20090827.jar -d ~/GitHub/osgi-and-java/terminal--first-osgi-bundle/OSGi-tutorial/classes ~/GitHub/osgi-and-java/terminal--first-osgi-bundle/OSGi-tutorial/org/osgi/tutorial/HelloWorldActivator.java
+
+cd ~/GitHub/osgi-and-java/terminal--first-osgi-bundle/OSGi-tutorial/
+jar -cvfm org.osgi.tutorial.jar META-INF/MANIFEST.MF -C classes .
+
+cd ~/equinox-osgi/equinox-SDK-3.5.1/plugins
+java -jar org.eclipse.osgi_3.5.1.R35x_v20090827.jar -console -configuration runtime
+
+
+install file:../../GitHub/osgi-and-java/terminal--first-osgi-bundle/OSGi-tutorial/org.osgi.tutorial.jar
+
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+
+javac -cp ~/equinox-osgi/org.apache.felix.main.distribution-7.0.1/bin/felix.jar -d ~/GitHub/osgi-and-java/terminal--first-osgi-bundle/OSGi-tutorial/classes ~/GitHub/osgi-and-java/terminal--first-osgi-bundle/OSGi-tutorial/org/osgi/tutorial/HelloWorldActivator.java
+
+cd ~/GitHub/osgi-and-java/terminal--first-osgi-bundle/OSGi-tutorial/
+jar -cvfm org.osgi.tutorial.jar META-INF/MANIFEST.MF -C classes .
+
+cd  ~/equinox-osgi/org.apache.felix.main.distribution-7.0.1
+java -jar bin/felix.jar
+
+install file:../../GitHub/osgi-and-java/terminal--first-osgi-bundle/OSGi-tutorial/org.osgi.tutorial.jar
+
